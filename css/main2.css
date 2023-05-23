@@ -1,0 +1,288 @@
+body {
+    background-color: rgb(43, 43, 43);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.navbar__signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar__signin a {
+    text-decoration: none;
+    transition: transform 0.1s;
+    cursor: pointer;
+    color: white;
+}
+.navbar__signin a:visited {
+    color: white;
+}
+.navbar__signin a:hover {
+    transform: scale(1.1)
+}
+.navbar__signin div {
+    border-radius: 2rem;
+    display: flex;
+    margin: 1rem;
+    background-color: rgb(117, 117, 117);
+    width: 8rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#imo {
+    border-radius: 2rem;
+    display: flex;
+    margin: 1rem;
+    background-color: rgb(117, 117, 117);
+    width: 11rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar__menu div {
+    margin: 1rem;
+
+}
+
+.navbar__menu a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+.navbar__menu a:visited {
+    color: white;
+}
+.navbar__menu a:hover {
+    transform: scale(1.1)
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+main {
+    padding: 5rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    flex-wrap: wrap;
+}
+
+.portfolio__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio__section-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    max-width: 50%;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: black;
+}
+
+.portfolio__section-project2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 50%;
+    max-width: 50%;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: black;
+}
+
+.portfolio__section-project2 img{
+    width: 60%;
+}
+
+.portfolio__section-project img {
+    width: 60%;
+    height: 60%;
+}
+
+
+.footer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__menu-items {
+    margin: 1rem;
+}
+
+.footer__menu-items a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.1s;
+    color: white;
+}
+
+.footer__menu-items a:visited {
+    color: white;
+}
+
+.footer__menu-items a:hover {
+    transform: scale(1.1)
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__logo img {
+    width: 25%;
+}
+
+@media (max-width: 950px) {
+    .navbar__signin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__menu {
+    font-size: 12px;
+    }
+
+    .footer__menu-items {
+        margin: 8px;
+    }
+    .section__img img {
+        width: 350px;
+    }
+    .header__logo img {
+        width: 350px;
+    }
+    .portfolio__section-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 70%;
+        max-width: 70%;
+        border: 2px solid white;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        background-color: black;
+    }
+    .portfolio__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main {
+        padding: 0;
+    }
+    .portfolio__section-project2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 70%;
+        max-width: 70%;
+        border: 2px solid white;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        background-color: black;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .section__img img {
+        width: 250px;
+    }
+    .header__logo img {
+        width: 250px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 950px) {
+
+    body {
+        font-size: 21px;
+    }
+    .navbar {
+        font-size: 23px;
+    }
+    .footer__menu {
+        font-size: 23px;
+    }
+
+
+}
