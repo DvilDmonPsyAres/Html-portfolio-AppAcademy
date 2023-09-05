@@ -185,6 +185,20 @@ main {
 .footer__logo img {
     width: 25%;
 }
+@media (min-width: 951px) {
+
+    body {
+        font-size: 21px;
+    }
+    .navbar {
+        font-size: 23px;
+    }
+    .footer__menu {
+        font-size: 23px;
+    }
+
+
+}
 
 @media (max-width: 950px) {
     .navbar__signin {
@@ -257,20 +271,6 @@ main {
         margin: 1rem;
         background-color: black;
     }
-
-}
-@media (min-width: 951px) {
-
-    body {
-        font-size: 21px;
-    }
-    .navbar {
-        font-size: 23px;
-    }
-    .footer__menu {
-        font-size: 23px;
-    }
-
 
 }
 
