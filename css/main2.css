@@ -259,19 +259,6 @@ main {
     }
 
 }
-
-@media (max-width: 550px) {
-    .section__img img {
-        width: 250px;
-    }
-    .header__logo img {
-        width: 250px;
-    }
-    h1 {
-        font-size: 25px;
-    }
-}
-
 @media (min-width: 951px) {
 
     body {
@@ -286,3 +273,16 @@ main {
 
 
 }
+
+@media (max-width: 550px) {
+    .section__img img {
+        width: 250px;
+    }
+    .header__logo img {
+        width: 250px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
