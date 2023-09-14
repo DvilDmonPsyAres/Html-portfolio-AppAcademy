@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="images/22.ico" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Imotechnologics</title>
     </head>
     <body>
+        <div class="header">
+            <div class="header__list">
+                <div class="nav__item-home"><a href="#home">Imotechnologics</a></div>
 
-    <div class="navbar">
-
-        <div class="navbar__signin">
-           <a href="imotech.html"> <div id="imo">Imotechnologics</div></a>
-           <a href="images.html"> <div id="imo">Images</div></a>
-           <a href="signup.html"> <div id="imo">SignIn</div></a>
-           <a href="index.html"> <div id="imo">Home</div></a>
-
-
+                <div class="nav__items">
+                    <div class="nav__item"><a href="#portfolio">Portfolio</a></div>
+                    <div class="nav__item"><a href="#contact">Contact</a></div>
+                </div>
+            </div>
         </div>
 
-        <div class="navbar__menu">
-            <a href="#home"><div>Home</div></a>
-            <a href="#python"><div>Python</div></a>
-            <a href="#javascript"><div>Javascript</div></a>
-            <a href="#html"><div>HTML</div></a>
+        <div class="main">
+            <div class="section-1">
+                <div class="sec1__description">
+                    <div class="sec1__h1">
+                      <h1>Welcome to my portfolio</h1>
+                    </div>
+                    <p class="section__descriptions">
+                        Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+                    </p>
+                </div>
+                <div class="sec1__img">
+                    <img src="./images/Profile_pic.png" alt="logo imotechnologics">
+                </div>
+            </div>
+
+            <div class="section-2 reveal">
+                <div style="border-bottom: 3px solid antiquewhite; padding-top: 1rem;">
+                </div>
+                <div class="sec2-top reveal">
+                    <div class="sec2-title">Let's Collaborate</div>
+                    <div class="sec2-img"><img src="./images/2_1.png" alt="networking antique" class="sec2"></div>
+                </div>
+                <div class="sec2-description">
+                    <div class="sec2__description-container">
+                        I am always eager to collaborate on exciting new projects and contribute my expertise to your team's success. If you are seeking a proactive software engineer who thrives on challenges and consistently delivers exceptional solutions, I invite you to connect with me.
+
+                        Feel free to explore my portfolio, and for inquiries or collaboration opportunities, please reach out via <a href="mailto:imotechnologics@gmail.com" style="color: black; text-decoration: underline;">imotechnologics@gmail.com.</a> You can also connect with me on <a href="https://www.linkedin.com/in/imo-technologics%C2%A9-42287825a/" style="color: black; text-decoration: underline;" :hover:cursor>LinkedIn</a> for a more in-depth discussion.
+
+                        Thank you for visiting, and I look forward to the prospect of working together.
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="skills reveal">
+                    <div class="skill-title">Back-End Development</div>
+                    <div class="skill-description">As a seasoned backend developer with a strong foundation in JavaScript, I specialize in architecting and building powerful server-side solutions. My expertise extends across a range of technologies and frameworks, allowing me to deliver top-notch backend services:</div>
+                </div>
+                <div class="skills reveal">
+                    <div class="skill-title">Node.js Mastery</div>
+                    <div class="skill-description">I have a deep understanding of Node.js, which enables me to develop high-performance, scalable, and efficient backend systems. Leveraging the Node.js runtime environment, I've created robust APIs, real-time applications, and serverless solutions that meet the demands of modern web development.</div>
+                </div>
+                <div class="skills reveal">
+                    <div class="skill-title">API Integration Specialist</div>
+                    <div class="skill-description"> Seamlessly integrating third-party APIs is second nature to me. I have a proven track record of enhancing application functionality and user experiences by incorporating external services, enriching the overall user experience.</div>
+                </div>
+                <div class="skills reveal">
+                    <div class="skill-title">Python Power</div>
+                    <div class="skill-description">Python's versatility and readability make it my go-to language for backend tasks. Whether it's data processing, scripting, or web development, I harness Python's strengths to deliver robust and maintainable solutions.</div>
+                </div>
+                <div class="skills reveal">
+                    <div class="skill-title">Django and Flask Mastery</div>
+                    <div class="skill-description">My skills extend to the Django and Flask frameworks, where I've developed powerful server-side applications. Using Django's batteries-included approach and Flask's minimalistic elegance, I create web applications that are not only functional but also user-friendly and performant.</div>
+                </div>
+                <div class="skills">
+                    <div class="skill-title">Data Analysis and Visualization</div>
+                    <div class="skill-description">I'm not just a backend developer; I'm also a data analysis intersed. I specialize in using Python for data analysis and visualization, helping organizations transform raw data into actionable insights. By leveraging Python's libraries and tools, I enable data-driven decision-making and strategic planning.</div>
+                </div>
+            </div>
         </div>
-    </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
 
-<header id="home">
-    <div class="header__main">
-        <h1>Imotechnologics</h1>
-        <div> <p> "who are we?"</p>
-        <p>By: Imotechnologics</p>
-        </div>
-    </div>
+            function reveal(){
+              const reveals = document.querySelectorAll('.reveal')
 
-    <div class="header__logo">
-        <img src="images/logo.png" alt="imotechnologics-logo">
-    </div>
-</header>
+              for(let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                let revealtop = reveals[i].getBoundingClientRect().top;
+                let revealpoint = 150;
 
-<div class="subtitles"><div> Programming Languages</div></div>
-
-<section id="python">
-    <div class="section__img">
-        <img src="images/pythonlogo.png" alt="python-logo">
-    </div>
-
-    <div class="section__main">
-        <h2>Python</h2>
-        <div> <p> Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule. Python is dynamically typed and garbage-collected.</p>
-        <p>Created By: Guido van Rossum</p>
-        </div>
-    </div>
-</section>
-
-<section id="javascript">
-    <div class="section__img">
-        <img src="images/jslogo.png" alt="js-logo">
-    </div>
-    <div class="section__main">
-        <h2>JavaScript</h2>
-        <div> <p> JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. Wikipedia</p>
-        <p>Designed by: Brendan Eich</p>
-        </div>
-    </div>
-</section>
-
-<section id="html">
-    <div class="section__img">
-        <img src="images/htmllogo.png" alt="html-logo">
-    </div>
-
-    <div class="section__main">
-        <h2>HTML</h2>
-        <div> <p> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
-        <p>Developed by: Web Hypertext Application Technology Working Group</p>
-        </div>
-    </div>
-</section>
-
-
-<div class="footer" id="links">
-
-    <div class="footer__logo">
-        <img src="images/logo.png" alt="imotechnologics-logo">
-        <h3>Imotechnologics</h3>
-    </div>
-
-    <div class="footer__menu">
-        <div class="footer__menu-items"><a href="#" >Contact</a> </div>
-        <div class="footer__menu-items"><a href="#">About Us</a> </div>
-        <div class="footer__menu-items"><a href="#">Terms of Use</a> </div>
-        <div class="footer__menu-items"><a href="#">FAQ's</a> </div>
-        <div class="footer__menu-items"><a href="#">Privacy Policy</a></div>
-    </div>
-
-
+                if(revealtop < windowHeight - revealpoint) {
+                  reveals[i].classList.add('active');
+                } else{
+                  reveals[i].classList.remove('active');
+                }
+              }
+            }
+          </script>
     </body>
 </html>
