@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans&family=Roboto:ital,wght@0,500;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 body {
   background-color: black;
   color: white;
@@ -52,6 +52,64 @@ a:hover{
   cursor: pointer;
 }
 
+.contact{
+  font-family: 'Kalam', cursive;
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin: 4rem 0;
+  padding: 1rem;
+}
+.contact-img{
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-img img{
+  max-width: 100%;
+}
+.contact-card__container{
+  width: 40%;
+  border: 3px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+}
+.contact-card{
+  background-color: blanchedalmond;
+  border: 3px solid burlywood;
+
+  width: 100%;
+  height: 100%;
+}
+.card-title {
+  font-size: 45px;
+  margin: 1rem;
+}
+.card-text{
+  font-size: 27px;
+  margin: 1rem;
+  font-weight: 300;
+  font-family: 'Space Mono', monospace;
+  padding: 1rem;
+}
+.link-icons{
+  padding: 2rem;
+}
+
+i{
+  margin: 3rem;
+}
+
+i:hover{
+  cursor: pointer;
+}
+.contact-img2{
+  display: none;
+}
 @media (max-width: 767px) {
   /* Your CSS rules for medium-sized screens here */
   .header{
@@ -71,6 +129,51 @@ a:hover{
     padding: .8rem 1.4rem;
     border-bottom: 1px solid antiquewhite;
   }
+
+  .contact{
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  .contact-img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-img img{
+    max-width: 80%;
+  }
+  .contact-card__container{
+    width: 100%;
+    border: 3px solid burlywood;
+    padding: 0;
+
+  }
+  .link-icons{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-title {
+    font-size: 45px;
+    margin: 1rem;
+  }
+  .card-text{
+    font-size: 21px;
+    margin: 1rem;
+    font-weight: 300;
+    font-family: 'Space Mono', monospace;
+    padding: 0;
+  }
+  .link-icons{
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  i{
+    margin: 0 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 885px) {
@@ -78,6 +181,26 @@ a:hover{
     margin-right: 1.5rem;
     font-size: 14px;
     padding: 1rem 2.3rem;
+  }
+  .contact{
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contact-img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-img img{
+    max-width: 80%;
+    padding: 3rem;
+  }
+  .contact-card__container{
+    width: 100%;
+    padding: 0;
+
   }
 
 }
@@ -88,11 +211,49 @@ a:hover{
     font-size: 14px;
     padding: 1rem 2.6rem;
   }
+  .card-title {
+    font-size: 45px;
+    margin: 2rem;
+  }
+  .card-text{
+    font-size: 21px;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .contact-img{
+    display: none;
+  }
+  .contact-img2{
+    display: contents;
+  }
 
 }
 
 @media (min-width: 1150px) {
+  .nav__item-home{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 65px;
+  }
+  .contact{
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
 
+  .card-title {
+    font-size: 65px;
+    margin: 2rem;
+  }
+  .card-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 39px;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .span1{
+    font-size: 27px;
+  }
 }
 
 .reveal{
