@@ -5,22 +5,23 @@
         <link rel="stylesheet" href="../css/portfolio.css">
         <link rel="icon" href="../images/22.ico" type="image/x-icon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
         <title>Imotechnologics</title>
     </head>
     <body>
         <div class="header">
             <div class="header__list">
-                <div class="nav__item-home"><a href="../index.html">Imotechnologics</a></div>
+              <a href="./index.html"><div class="nav__item-home">Imotechnologics</div></a>
 
                 <div class="nav__items">
-                    <div class="nav__item"><a href="./portfolio.html">Portfolio</a></div>
-                    <div class="nav__item"><a href="#contact">Contact</a></div>
+                  <a href="./portfolio.html"><div class="nav__item">Portfolio</div></a>
+                  <a href="./contact.html"><div class="nav__item">Contact</div></a>
                 </div>
             </div>
         </div>
 
 <div class="main">
-  <div class="section-1">
+  <div class="section-1 screveal">
     <div class="sec1-skill">
       <div class="sec1-title">
         React Front End Samples
@@ -176,6 +177,17 @@
                 }
               }
             }
+          </script>
+          <script>
+            let interactive = {
+                distance: '150%',
+                origin: 'bottom',
+                opacity: null
+            }
+            ScrollReveal().reveal('.nav__item-home', interactive);
+            ScrollReveal().reveal('.nav__item', interactive);
+            ScrollReveal().reveal('.screveal',{ delay: 220 });
+            ScrollReveal().reveal('.node__sec-img reveal',{ delay: 250 });
           </script>
     </body>
 </html>

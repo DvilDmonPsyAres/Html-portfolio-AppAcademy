@@ -28,6 +28,7 @@ a {
   text-align: center;
   font-size: 45px;
 }
+
 .nav__items {
   display: flex;
   justify-content: flex-end;
@@ -51,77 +52,6 @@ a:hover{
   cursor: pointer;
 }
 
-/* section 1 */
-.section-1{
-  border-bottom: 3px solid antiquewhite;
-}
-.sec1-skill{
-  border-bottom: 7px solid antiquewhite;
-  margin-bottom: 1rem;
-}
-.sec1-title{
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  font-size: 48px;
-  margin: 4rem;
-}
-
-.sec1-description{
-  background-color: azure;
-  color: black;
-  font-family: 'Orbitron', sans-serif;
-  padding: 2rem;
-  font-size: 27px;
-}
-
-.sec1__skill-article{
-display: flex;
-}
-
-.img-50 {
-  width: 50%;
-  padding: 1rem;
-  margin: 1rem;
-}
-
-
-.skill-img{
-  width: 100%;
-  display: flex;
-  border: 10px solid rgb(0, 0, 0);
-}
-
-
-.skill-img img{
-  width: 100%;
-  height: 60%;
-}
-
-/* 2nd article python */
-.py__sec-img{
-  border: 15px solid rgb(0, 0, 0);
-}
-.py-img{
-  max-width: 100%;
-  text-align: center;
-  margin: 3rem;
-}
-.py-img img{
-  width: 90%;
-  border-radius: 50%;
-}
-
-.node__sec-img{
-margin-top: 2rem;
-}
-.node-img{
-  max-width: 100%;
-}
-
-.node-img img{
-  width: 100%;
-}
-
 @media (max-width: 767px) {
   /* Your CSS rules for medium-sized screens here */
   .header{
@@ -141,34 +71,6 @@ margin-top: 2rem;
     padding: .8rem 1.4rem;
     border-bottom: 1px solid antiquewhite;
   }
-  .sec1-title{
-
-    font-size: 31px;
-
-  }
-  .sec1-description{
-    font-size: 21px;
-  }
-
-  .sec1__skill-article{
-    flex-direction: column;
-  }
-
-  .img-50 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .skill-img{
-    width: 95%;
-    display: flex;
-  }
-  .skill-img img{
-    width: 100%;
-    height: 60%;
-  }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 885px) {
@@ -176,19 +78,6 @@ margin-top: 2rem;
     margin-right: 1.5rem;
     font-size: 14px;
     padding: 1rem 2.3rem;
-  }
-  .sec1-title{
-    padding: 2.5rem;
-  }
-  .sec1-description{
-    padding: 3rem;
-  }
-  .nav__item-home{
-    font-size: 55px;
-  }
-  .py-img img{
-    width: 63%;
-    border-radius: 0%;
   }
 
 }
@@ -200,50 +89,10 @@ margin-top: 2rem;
     padding: 1rem 2.6rem;
   }
 
-  .sec1-title{
-    padding: 3.5rem;
-  }
-
-  .sec1-description{
-    padding: 5rem;
-    font-size: 31px;
-  }
-  .nav__item-home{
-    font-size: 65px;
-  }
-  .py-img img{
-    width: 70%;
-  }
 }
 
 @media (min-width: 1150px) {
-  .sec1__h1{
-    display: contents;
-    font-size: 55px;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  .sec1-title{
-    padding: 5rem;
-  }
-  .nav__items{
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  .nav__item-home{
-    font-size: 65px;
-    padding-top: 3rem;
-  }
 
-  .sec1-description{
-    padding: 7rem;
-    font-size: 35px;
-  }
-
-  .py-img img{
-    width: 55%;
-    border-radius: 50%;
-    height: 55%;
-  }
 }
 
 .reveal{

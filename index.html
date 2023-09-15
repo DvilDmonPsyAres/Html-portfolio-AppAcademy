@@ -6,15 +6,16 @@
         <link rel="icon" href="images/22.ico" type="image/x-icon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Imotechnologics</title>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
     </head>
     <body>
         <div class="header">
             <div class="header__list">
-                <div class="nav__item-home"><a href="#home">Imotechnologics</a></div>
+                <a href="./index.html"><div class="nav__item-home">Imotechnologics</div></a>
 
                 <div class="nav__items">
-                    <div class="nav__item"><a href="./routes/portfolio.html">Portfolio</a></div>
-                    <div class="nav__item"><a href="#contact">Contact</a></div>
+                    <a href="./routes/portfolio.html"><div class="nav__item">Portfolio</div></a>
+                    <a href="./routes/contact.html"><div class="nav__item">Contact</div></a>
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                     <div class="skill-title">Django and Flask Mastery</div>
                     <div class="skill-description">My skills extend to the Django and Flask frameworks, where I've developed powerful server-side applications. Using Django's batteries-included approach and Flask's minimalistic elegance, I create web applications that are not only functional but also user-friendly and performant.</div>
                 </div>
-                <div class="skills">
+                <div class="skills last-skill">
                     <div class="skill-title">Data Analysis and Visualization</div>
                     <div class="skill-description">I'm not just a backend developer; I'm also a data analysis intersed. I specialize in using Python for data analysis and visualization, helping organizations transform raw data into actionable insights. By leveraging Python's libraries and tools, I enable data-driven decision-making and strategic planning.</div>
                 </div>
@@ -99,5 +100,16 @@
               }
             }
           </script>
+                    <script>
+                        let interactive = {
+                            distance: '150%',
+                            origin: 'bottom',
+                            opacity: null
+                        }
+                        ScrollReveal().reveal('.nav__item-home', interactive);
+                        ScrollReveal().reveal('.nav__item', interactive);
+                        ScrollReveal().reveal('.section-1',{ delay: 220 });
+                        ScrollReveal().reveal('.last-skill',{ delay: 250 });
+                      </script>
     </body>
 </html>
