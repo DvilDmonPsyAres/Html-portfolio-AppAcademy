@@ -150,6 +150,24 @@ border: 1px solid antiquewhite;
   margin: 1rem;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icons{
+  padding: 2rem;
+}
+
+i{
+  margin: 3rem;
+}
+
+i:hover{
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   /* Your CSS rules for medium-sized screens here */
   .header{
@@ -198,6 +216,16 @@ border: 1px solid antiquewhite;
 
   .sec2__description-container{
     margin: 2rem 1rem;
+  }
+  .link-icons{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+
+  i{
+    margin: 0 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 885px) {
